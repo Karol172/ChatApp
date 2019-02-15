@@ -1,0 +1,8 @@
+package org.karol172.ChatApp.message;
+
+public enum MessageType {
+    MESSAGE, GET_MESSAGES,
+    CREATE_USER, NICK_IS_TAKEN,
+    CREATE_ROOM, DELETE_ROOM, GET_ROOMS, ROOM_NAME_IS_TAKEN,
+    CHECK_CONNECTION, BAD_REQUEST
+}

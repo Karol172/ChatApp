@@ -57,11 +57,6 @@ public class RoomDao {
         Optional<Room> room2 = rooms.stream().findFirst();
         if (room.isPresent())
             return room.get();
-        for (int i=0;i<roomName.length();i++)
-            System.out.println((int)roomName.charAt(i));
-        System.out.println("Istniejący: ");
-        for (int i=0;i<room2.get().getNameRoom().length();i++)
-            System.out.println((int)room2.get().getNameRoom().charAt(i));
 
         throw new NotFoundException("Room " + roomName + " doesn't exist!");
     }

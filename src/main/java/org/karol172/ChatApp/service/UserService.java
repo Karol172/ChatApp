@@ -60,8 +60,4 @@ public class UserService {
             e.printStackTrace();
         }
     }
-
-    public Collection<User> getAll () {
-        return userDao.getAll();
-    }
 }

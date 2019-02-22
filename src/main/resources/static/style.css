@@ -13,10 +13,6 @@ body {
     border-radius: 5px;
 }
 
-#incorrect-name {
-    visibility: hidden;
-}
-
 .rooms-list-label {
     font-size: 25px;
 }

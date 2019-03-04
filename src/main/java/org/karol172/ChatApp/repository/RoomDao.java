@@ -54,7 +54,6 @@ public class RoomDao {
 
     private Room findRoom (String roomName) throws NotFoundException {
         Optional<Room> room = rooms.stream().filter(r -> r.getNameRoom().equals(roomName)).findFirst();
-        Optional<Room> room2 = rooms.stream().findFirst();
         if (room.isPresent())
             return room.get();
 

@@ -28,6 +28,7 @@ public class AppController {
     @Autowired
     private SimpMessagingTemplate simpMessagingTemplate;
 
+    @Autowired
     public AppController(UserService userService, RoomService roomService) {
         this.userService = userService;
         this.roomService = roomService;
